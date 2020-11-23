@@ -1,0 +1,12 @@
+version: '2'
+services:
+  myztl3-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/myZTL3/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=myZTL3
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
